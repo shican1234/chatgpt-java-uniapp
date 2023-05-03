@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="io.renren.dao.UserDao">
+    <update id="updateMsgCount" parameterType="map">
+        update tb_user
+        <set>
+            <if test="msgCount != null ">`msg_count` = msg_count + #{msgCount}</if>
+        </set>
+        where id = #{userId}
+    </update>
+
+    <select id="getUserByMobile" resultType="io.renren.entity.UserEntity">
+        select * from tb_user where mobile = #{value}
+    </select>
+
+    <select id="getUserByUserId" resultType="io.renren.entity.UserEntity">
+        select * from tb_user where id = #{value}
+    </select>
+    <select id="getUserByOpenId" resultType="io.renren.entity.UserEntity">
+        select * from tb_user where wx_openid = #{value}
+    </select>
+    <select id="getUserByUnionId" resultType="io.renren.entity.UserEntity">
+        select * from tb_user where wx_unionId = #{value}
+    </select>
+    <select id="countUserByPid" resultType="java.lang.Integer">
+        select count(*) from tb_user where pid = #{value}
+    </select>
+    <select id="countUserByGpid" resultType="java.lang.Integer">
+        select count(*) from tb_user where gpid = #{value}
+    </select>
+    <select id="getUserListByPid" resultType="io.renren.entity.UserEntity">
+        select * from tb_user where  pid = #{value}
+    </select>
+</mapper>

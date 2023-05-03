@@ -1,0 +1,12 @@
+.idea/
+renren-api/target/
+renren-common/target/
+renren-security.iml
+renren-admin/renren-admin.iml
+renren-api/renren-api.iml
+renren-common/renren-common.iml
+renren-dynamic-datasource/renren-dynamic-datasource.iml
+renren-generator/renren-generator.iml
+renren-admin/target/
+renren-dynamic-datasource/target/
+renren-generator/target/

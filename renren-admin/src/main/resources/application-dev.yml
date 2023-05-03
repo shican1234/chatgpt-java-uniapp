@@ -1,0 +1,82 @@
+spring:
+  datasource:
+    druid:
+      #MySQL
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/chatgpt?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true
+      username: chatgpt
+      password: chatgpt
+      #达梦8
+#      driver-class-name: dm.jdbc.driver.DmDriver
+#      url: jdbc:dm://192.168.10.10:5236/renren_security?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true
+#      username: renren_security
+#      password: 12345678
+      #      #Oracle
+      #      driver-class-name: oracle.jdbc.OracleDriver
+      #      url: jdbc:oracle:thin:@192.168.10.10:1521:xe
+      #      username: renren_security
+      #      password: 123456
+      #      #SQLServer
+      #      driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+      #      url: jdbc:sqlserver://localhost:1433;DatabaseName=renren_security
+      #      username: sa
+      #      password: 123456
+      #      #postgresql
+      #      driver-class-name: org.postgresql.Driver
+      #      url: jdbc:postgresql://192.168.10.10:5432/postgres
+      #      username: postgres
+      #      password: 123456
+      initial-size: 10
+      max-active: 100
+      min-idle: 10
+      max-wait: 6000
+      pool-prepared-statements: true
+      max-pool-prepared-statement-per-connection-size: 20
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      #Oracle需要打开注释
+      #      validation-query: SELECT 1 FROM DUAL
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      stat-view-servlet:
+        enabled: true
+        url-pattern: /druid/*
+        #login-username: admin
+        #login-password: admin
+        #达梦数据库，需要注释掉，其他数据库可以打开
+#      filter:
+#        stat:
+#          log-slow-sql: true
+#          slow-sql-millis: 1000
+#          merge-sql: false
+#        wall:
+#          config:
+#            multi-statement-allow: true
+  redis:
+    #open: false  # 是否开启redis缓存  true开启   false关闭
+    database: 1
+    host: 127.0.0.1
+    port: 6379
+    #        password:        # 密码（默认为空）
+    password: 12qwaszx # 密码（默认为空）
+    timeout: 6000  # 连接超时时长（毫秒）
+    jedis:
+      pool:
+        max-active: 1000  # 连接池最大连接数（使用负值表示没有限制）
+        max-wait: -1      # 连接池最大阻塞等待时间（使用负值表示没有限制）
+        max-idle: 10      # 连接池中的最大空闲连接
+        min-idle: 5       # 连接池中的最小空闲连接
+##多数据源的配置，需要引用renren-dynamic-datasource
+#dynamic:
+#  datasource:
+#    slave1:
+#      driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+#      url: jdbc:sqlserver://123456:1433;DatabaseName=renren_security
+#      username: sa
+#      password: 123456
+#    slave2:
+#      driver-class-name: org.postgresql.Driver
+#      url: jdbc:postgresql://123456:5432/renren_security
+#      username: postgres
+#      password: 123456
