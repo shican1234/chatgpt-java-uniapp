@@ -32,47 +32,9 @@ public class SendSmsUtils {
     	sendSmsUtils.sysParamsService = this.sysParamsService;
     }
 
-	
-//	protected static final String AccessKeyID = "LTAI4GF5tbuEBiFSGNjC5Gxo";//阿里云短信ID
-//	protected static final String AccessSecret = "fg14QYS8uW3zqE3W6apzQLI7ytW9in";//阿里云短信私钥
-//	protected static final String AccessKeyID = "LTAI5t7RxLMjtng2hq9L99mV";//阿里云短信ID
-//	protected static final String AccessSecret = "5QfwSfwhAnjKtVsnHuXEbGVItgP6GJ";//阿里云短信私钥
-//	  public static String SendSms(String phone,String TemplateCode,int smscode,int type) throws com.aliyuncs.exceptions.ClientException {
-//		  	DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou", AccessKeyID, AccessSecret);
-//	        IAcsClient client = new DefaultAcsClient(profile);
-//
-//	        CommonRequest request = new CommonRequest();
-//	        request.setMethod(MethodType.POST);
-//	        request.setDomain("dysmsapi.aliyuncs.com");//阿里云短信API接口
-//	        request.setVersion("2017-05-25");
-//	        request.setAction("SendSms");//标记
-//	        request.putQueryParameter("RegionId", "cn-hangzhou");//短信国家(中国)
-//	        request.putQueryParameter("PhoneNumbers", phone);//接收手机号
-////	        request.putQueryParameter("SignName", "卿缘科技");//审核标记
-//	        request.putQueryParameter("SignName", "巧聊");//审核标记
-//	        request.putQueryParameter("TemplateCode", TemplateCode);//发送短信类型
-//	        request.putQueryParameter("TemplateParam", "{code:"+smscode+"}");//发送短信验证码(json格式)
-//	        try {
-//	            CommonResponse response = client.getCommonResponse(request);
-//	            String data = response.getData();
-//	            JSONObject object = JSONObject.fromObject(data);
-//	            String code = object.getString("Code");;
-//				if(code.equals("OK")){
-//					return "1";
-//				}else {
-//					return "2";
-//				}
-//	        } catch (ServerException e) {
-//	            e.printStackTrace();
-//	        } catch (ClientException e) {
-//	            e.printStackTrace();
-//	        }
-//			return null;
-//	    }
-	  
+
 	  public static String jgsendSms(String mobile, String code) {
-//		   String appKey = "be28096359d877d470517297";
-//	       String masterSecret = "9e5dc7eaeccd2e39bc3666b4";
+
 		  //获取极光短信appKey
 		  String appKey = sendSmsUtils.sysParamsService .getValue("JG_APP_KEY");
 		  //获取极光短信masterSecret
@@ -123,7 +85,7 @@ public class SendSmsUtils {
 	     }
 	    
 	    public static void main(String[] args) {
-	    	String jgsendSms = jgsendSms("17188399444", "1234");
+	    	String jgsendSms = jgsendSms("18112345678", "1234");
 	    	if(jgsendSms != null && jgsendSms.equals("1")) {
 	    		System.out.println("验证码发送成功!");
 	    	}else {
