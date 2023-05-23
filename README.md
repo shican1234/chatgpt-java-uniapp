@@ -68,8 +68,6 @@ npm install
 ![输入图片说明](renren-admin/src/main/resources/public/pc6.png)
 ![输入图片说明](renren-admin/src/main/resources/public/pc7.png)
 ![输入图片说明](renren-admin/src/main/resources/public/pc8.png)
-![输入图片说明](renren-admin/src/main/resources/public/pc9.png)
-![输入图片说明](renren-admin/src/main/resources/public/pc10.png)
 
 **UNIAPP页面**
 ![输入图片说明](renren-admin/src/main/resources/public/qd1.png)
