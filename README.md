@@ -6,6 +6,8 @@
 - 后台包括海报管理,充值配置管理,GPTKEY管理,用户管理,分销提现管理,问答模板配置,AI模配置等
 - 基于GPT3.5 SDK包括了4.0的功能 因为没有4.0的key所以没试过4.0的
 - 具体功能看演示(演示为商业版本)
+- WEB演示地址：https://pc.momoyucm.top
+- H5演示地址：https://ai.momoyucm.top
 - 后台演示地址(此后台修改的在演示前端不会有变化)
 - http://175.178.233.9:9191/
 - 账号:yanshi
@@ -56,6 +58,31 @@ npm install
 <br>
 
 ### 项目截图(截图内容为商业版本)
+**WEB页面**
+![输入图片说明](renren-admin/src/main/resources/public/pc0.png)
+![输入图片说明](renren-admin/src/main/resources/public/pc1.png)
+![输入图片说明](renren-admin/src/main/resources/public/pc2.png)
+![输入图片说明](renren-admin/src/main/resources/public/pc3.png)
+![输入图片说明](renren-admin/src/main/resources/public/pc4.png)
+![输入图片说明](renren-admin/src/main/resources/public/pc5.png)
+![输入图片说明](renren-admin/src/main/resources/public/pc6.png)
+![输入图片说明](renren-admin/src/main/resources/public/pc7.png)
+![输入图片说明](renren-admin/src/main/resources/public/pc8.png)
+![输入图片说明](renren-admin/src/main/resources/public/pc9.png)
+![输入图片说明](renren-admin/src/main/resources/public/pc10.png)
+
+**UNIAPP页面**
+![输入图片说明](renren-admin/src/main/resources/public/qd1.png)
+![输入图片说明](renren-admin/src/main/resources/public/qd2.jpeg)
+![输入图片说明](renren-admin/src/main/resources/public/qd3.jpeg)
+![输入图片说明](renren-admin/src/main/resources/public/qd4.jpeg)
+![输入图片说明](renren-admin/src/main/resources/public/qd5.jpeg)
+![输入图片说明](renren-admin/src/main/resources/public/qd6.jpeg)
+![输入图片说明](renren-admin/src/main/resources/public/qd7.jpeg)
+![输入图片说明](renren-admin/src/main/resources/public/qd8.jpeg)
+![输入图片说明](renren-admin/src/main/resources/public/qd9.jpeg)
+![输入图片说明](renren-admin/src/main/resources/public/qd10.jpeg)
+**后台页面**
 ![输入图片说明](renren-admin/src/main/resources/public/ht1.png)
 ![输入图片说明](renren-admin/src/main/resources/public/ht2.png)
 ![输入图片说明](renren-admin/src/main/resources/public/ht3.png)
@@ -68,16 +95,7 @@ npm install
 ![输入图片说明](renren-admin/src/main/resources/public/ht10.png)
 ![输入图片说明](renren-admin/src/main/resources/public/ht11.png)
 ![输入图片说明](renren-admin/src/main/resources/public/ht12.png)
-![输入图片说明](renren-admin/src/main/resources/public/qd1.png)
-![输入图片说明](renren-admin/src/main/resources/public/qd2.jpeg)
-![输入图片说明](renren-admin/src/main/resources/public/qd3.jpeg)
-![输入图片说明](renren-admin/src/main/resources/public/qd4.jpeg)
-![输入图片说明](renren-admin/src/main/resources/public/qd5.jpeg)
-![输入图片说明](renren-admin/src/main/resources/public/qd6.jpeg)
-![输入图片说明](renren-admin/src/main/resources/public/qd7.jpeg)
-![输入图片说明](renren-admin/src/main/resources/public/qd8.jpeg)
-![输入图片说明](renren-admin/src/main/resources/public/qd9.jpeg)
-![输入图片说明](renren-admin/src/main/resources/public/qd10.jpeg)
+
 ### 普通版本与商业版的区别
 ![区别](renren-admin/src/main/resources/public/js.png)
 <br>
