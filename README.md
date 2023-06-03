@@ -5,23 +5,19 @@
 - java开发的chatgpt小程序  前端使用uniapp   可打包多端运行  APP  H5  公众号  小程序等 ,三级分销,卡密充值,提供opai的反向代理,
 - 后台包括海报管理,充值配置管理,GPTKEY管理,用户管理,分销提现管理,问答模板配置,AI模配置等
 - 基于GPT3.5 SDK包括了4.0的功能 因为没有4.0的key所以没试过4.0的
+- WEB版本包括SD绘画,FS绘画等
+- 接入三方内容检测功能,免得乱提问题坐牢去了
 - 具体功能看演示(演示为商业版本)
 - WEB演示地址：https://pc.momoyucm.top
 - H5演示地址：https://ai.momoyucm.top
-- 后台演示地址(此后台修改的在演示前端不会有变化)
-- http://175.178.233.9:9191/
-- 账号:yanshi
-- 密码:yanshi
-- 演示后台没有开放GPTKEY管理权限和支付管理权限
 - 后台页面仓库地址 https://gitee.com/shican1234/chatgpt-admin-ui.git
 - UNIAPP仓库地址 https://gitee.com/shican1234/chatgpt-uniapp.git
 - 商业版H5公众号和小程序演示: ![输入图片说明](renren-admin/src/main/resources/public/gzh2.jpg)
 
 <br>
 
-### 进度说明
-   
-- 本月更新适配PC版本的前端
+
+
 
 **本地JAVA部署**
 - 通过git下载源码
