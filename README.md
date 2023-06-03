@@ -91,7 +91,7 @@ npm install
 ![输入图片说明](renren-admin/src/main/resources/public/ht12.png)
 
 ### 普通版本与商业版的区别
-![区别](renren-admin/src/main/resources/public/js.png)
+![区别](renren-admin/src/main/resources/public/对比.png)
 <br>
 
 
