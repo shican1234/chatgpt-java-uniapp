@@ -56,6 +56,7 @@ npm install
 
 ### 项目截图(截图内容为商业版本)
 **WEB页面**
+![输入图片说明](renren-admin/src/main/resources/public/pc11.png)
 ![输入图片说明](renren-admin/src/main/resources/public/pc0.png)
 ![输入图片说明](renren-admin/src/main/resources/public/pc1.png)
 ![输入图片说明](renren-admin/src/main/resources/public/pc2.png)
